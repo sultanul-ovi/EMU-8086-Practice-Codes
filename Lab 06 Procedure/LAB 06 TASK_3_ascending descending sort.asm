@@ -30,6 +30,8 @@ INPUTS:
 	INT 21h
 	LOOP INPUTS
 	
+	
+	
 	MOV CX, 10
 	DEC CX				; because n - 1 elements need to be checked
 

@@ -3,15 +3,15 @@ ORG 100h
 .DATA
 	COUNT DW 5
 	INDEX DW ?
-
+    
 	LARGEST DB 0
 	SMALLEST DB 10
 	
 	ARR DB 10 DUP (0)
 	PROMPT_1 DB 'Input 5 numbers: ', '$'
-	PROMPT_2 DB 0Dh, 0Ah, 'AVERAGE = ', '$'
-	PROMPT_3 DB ' LARGEST = ', '$'
-	PROMPT_4 DB ' SMALLEST = ', '$'
+	PROMPT_2 DB 0Dh, 0Ah, 'AVERAGE  =  ', '$'
+	PROMPT_3 DB 0Dh, 0Ah, 'LARGEST  =  ', '$'
+	PROMPT_4 DB 0Dh, 0Ah, 'SMALLEST =  ', '$'
 
 .CODE
 MAIN PROC
@@ -27,7 +27,7 @@ MAIN PROC
 	LEA SI, ARR
 	MOV INDEX, SI
 	
-Loop_1:
+input_1:
 	MOV AH, 1
 	INT 21h
 	
@@ -38,7 +38,7 @@ Loop_1:
 	MOV AH, 2
 	MOV DX, ' '
 	INT 21h
-	LOOP Loop_1
+	LOOP input_1
 
 	LEA DX, PROMPT_2
 	MOV AH, 9
@@ -58,7 +58,7 @@ Loop_1:
 	MOV AH, 2
 	MOV DL, LARGEST
 	ADD DL, 48
-	INT 21h				; Code is OK up to this line
+	INT 21h				
 	
 	LEA DX, PROMPT_4
 	MOV AH, 9
@@ -89,7 +89,6 @@ CALC_AVERAGE PROC
 			
 	MOV BX, 5
 	DIV BX
-		
 	RET
 CALC_AVERAGE ENDP
 
