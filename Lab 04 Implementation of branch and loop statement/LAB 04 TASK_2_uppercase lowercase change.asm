@@ -2,7 +2,7 @@ ORG 0100H
 
 .DATA
 	PROMPT_1 DB 'Enter a character: ', '$'
-	PROMPT_2 DB 0Dh, 0Ah, 'toLowerCase / toUpperCase of this character: ', '$'
+	PROMPT_2 DB 0Dh, 0Ah, 'Output: ', '$'
 	
 .CODE
 
