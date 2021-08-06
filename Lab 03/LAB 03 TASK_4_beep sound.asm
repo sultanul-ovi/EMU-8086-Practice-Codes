@@ -1,5 +1,5 @@
-;beep implementation
-  
+;   Write an assembly language code to implement beep sound.
+
 
 ORG 0100H
 

@@ -1,3 +1,5 @@
+; FFFh * 10h + 1111b
+
 ORG 0100H
 
 .DATA

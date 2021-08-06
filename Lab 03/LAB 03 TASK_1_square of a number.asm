@@ -1,4 +1,5 @@
-;Calculate the square of any number.
+;   Calculate the square of any number.
+
 ORG 0100H
 
 .DATA

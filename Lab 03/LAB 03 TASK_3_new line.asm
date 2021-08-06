@@ -1,4 +1,4 @@
-;input output new line 
+;   Write an assembly language code to implement a new line.
 
 ORG 0100H
 .model small       

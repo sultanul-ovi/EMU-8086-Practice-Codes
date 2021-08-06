@@ -1,4 +1,6 @@
-;input output implementation  
+;   Write an assembly language code that will 
+;   take a number from the user and 
+;   print the same number as output
 
 ORG 0100H
 .model small        ; it tell us that there is a code segment and a data segment

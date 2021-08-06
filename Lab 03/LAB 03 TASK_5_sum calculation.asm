@@ -1,6 +1,6 @@
-;Write an assembly language code that 
-;will take 3 numbers(0 to 9) from the user 
-;and store the sum in a variable. 
+;   Write an assembly language code that 
+;   will take 3 numbers(0 to 9) from the user 
+;   and store the sum in a variable. 
 
 ORG 0100H
 .model small        
