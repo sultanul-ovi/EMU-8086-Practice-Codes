@@ -1,4 +1,5 @@
-;	Write an assembly language program that inputs a single letter in lowercase 
+;	Write an assembly language program that 
+;	inputs a single letter in lowercase 
 ;	and shows the next 3 letters in the uppercase in new lines.
 
 ORG 0100H

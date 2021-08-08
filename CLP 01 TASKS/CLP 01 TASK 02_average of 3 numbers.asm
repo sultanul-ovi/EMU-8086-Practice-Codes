@@ -1,4 +1,5 @@
-;   Write an assembly language program that can calculate the average of 3 numbers (0 to 9). 
+;   Write an assembly language program that can 
+;   calculate the average of 3 numbers (0 to 9). 
 ;   Take 3 numbers from input and store the average in a variable.
 
 ORG 0100H
