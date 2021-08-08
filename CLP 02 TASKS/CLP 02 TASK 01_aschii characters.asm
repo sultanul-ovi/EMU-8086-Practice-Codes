@@ -4,7 +4,7 @@ ORG 0100H
 
 .DATA
 	PROMPT_1 DB 'Enter a number: ', '$', 0Dh, 0Ah
-	
+
 .CODE
 
 MAIN PROC
