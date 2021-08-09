@@ -1,7 +1,9 @@
 MDSPLY_STRING MACRO STRING      ; Declaration of MACRO
 
    MOV DX, OFFSET STRING
-   CALL DSPLY_STRING            ; Calling the Procedure
+   MOV AH, 09H
+   INT 21H
+   RET           
 
 ENDM
 
@@ -24,12 +26,5 @@ MAIN PROC
 
 MAIN ENDP
 
-DSPLY_STRING PROC               ; Declaration of PROCEDURE
-   
-   MOV AH, 09H
-   INT 21H
-   RET
-   
-DSPLY_STRING ENDP
 
 END MAIN
