@@ -2,8 +2,7 @@ MDSPLY_STRING MACRO STRING      ; Declaration of MACRO
 
    MOV DX, OFFSET STRING
    MOV AH, 09H
-   INT 21H
-   RET           
+   INT 21H           
 
 ENDM
 
